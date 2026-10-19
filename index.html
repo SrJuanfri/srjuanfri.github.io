@@ -22,36 +22,27 @@
   
   <style>
     :root, [data-theme='light'] {
-      --bg: #F2EDE1;
-      --bg-secondary: #EAE4D5;
-      --card-bg: #FAF7EF;
-      --card-border: #DCD3BF;
-      --card-shadow: 0 1px 3px rgba(90,70,40,0.08), 0 1px 2px rgba(90,70,40,0.05);
-      --card-shadow-hover: 0 12px 24px -6px rgba(90,70,40,0.12), 0 6px 12px -4px rgba(90,70,40,0.06);
-      --text-primary: #2A2620;
-      --text-secondary: #5C5547;
-      --text-tertiary: #8E8573;
-      --accent: #9DB4D6;
-      --accent-text: #476890;
-      --accent-light: #E2E8F1;
-      --accent-hover: #7F9CC9;
-      --accent-solid: #A9BEDC;
-      --accent-solid-hover: #98B0D3;
-      --accent-solid-text: #23303F;
-      --accent-rgb: 157, 180, 214;
-      --grad-a: #7F9CC9;
-      --grad-b: #A592CF;
-      --grad-c: #D68FA3;
-      --border: #DCD3BF;
-      --nav-bg: rgba(242, 237, 225, 0.85);
-      --nav-border: #DCD3BF;
-      --badge-bg: #EAE4D5;
-      --badge-border: #D8CFBA;
-      --badge-text: #4A4337;
-      --modal-overlay: rgba(42, 38, 32, 0.55);
-      --blob-opacity: 0.55;
-      --grid-line: rgba(110, 90, 55, 0.05);
-      --grain-display: block;
+      --bg: #FAFAF9;
+      --bg-secondary: #F5F5F4;
+      --card-bg: #FFFFFF;
+      --card-border: #E7E5E4;
+      --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --card-shadow-hover: 0 12px 24px -6px rgba(0, 0, 0, 0.08), 0 6px 12px -4px rgba(0, 0, 0, 0.04);
+      --text-primary: #1C1917;
+      --text-secondary: #57534E;
+      --text-tertiary: #A8A29E;
+      --accent: #f97316;
+      --accent-light: #FFF7ED;
+      --accent-hover: #ea580c;
+      --border: #E7E5E4;
+      --nav-bg: rgba(250, 250, 249, 0.85);
+      --nav-border: #E7E5E4;
+      --badge-bg: #F5F5F4;
+      --badge-border: #E7E5E4;
+      --badge-text: #44403C;
+      --modal-overlay: rgba(28, 25, 23, 0.55);
+      --blob-opacity: 1;
+      --grid-line: rgba(0, 0, 0, 0.03);
     }
 
     [data-theme='dark'] {
@@ -64,18 +55,9 @@
       --text-primary: #FAFAF9;
       --text-secondary: #A8A29E;
       --text-tertiary: #78716C;
-      --accent: #9DB4D6;
-      --accent-text: #B9CBE8;
-      --accent-light: #1E2633;
-      --accent-hover: #B9CBE8;
-      --accent-solid: #8FA9D0;
-      --accent-solid-hover: #A9BEDC;
-      --accent-solid-text: #14181F;
-      --accent-rgb: 157, 180, 214;
-      --grad-a: #9DB4D6;
-      --grad-b: #B9A7D9;
-      --grad-c: #E0A9B8;
-      --grain-display: none;
+      --accent: #f97316;
+      --accent-light: #431407;
+      --accent-hover: #fb923c;
       --border: #292524;
       --nav-bg: rgba(12, 10, 9, 0.85);
       --nav-border: #292524;
@@ -121,29 +103,22 @@
     .theme-btn-secondary:hover {
       background-color: var(--bg-secondary);
       border-color: var(--accent);
-      color: var(--accent-text);
+      color: var(--accent);
     }
 
     .btn-breakdown {
       background-color: var(--accent-light);
-      color: var(--accent-text);
-      border: 1px solid rgba(var(--accent-rgb), 0.55);
+      color: var(--accent);
+      border: 1px solid rgba(249, 115, 22, 0.35);
       font-weight: 700;
       transition: all 0.2s ease;
     }
 
     .btn-breakdown:hover {
       background-color: var(--accent);
-      color: var(--accent-solid-text);
+      color: #ffffff;
       border-color: var(--accent);
-      box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.35);
-    }
-
-    .paper-grain {
-      display: var(--grain-display);
-      opacity: 0.5;
-      mix-blend-mode: multiply;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.25  0 0 0 0.09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
     }
 
     .grid-pattern {
@@ -253,7 +228,7 @@
     }
 
     .badge-frosted {
-      background-color: rgba(250, 247, 239, 0.88);
+      background-color: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       color: #44403C;
@@ -266,35 +241,34 @@
     }
   </style>
 </head>
-<body class="min-h-screen relative overflow-x-hidden selection:bg-[color:var(--accent)] selection:text-[color:var(--text-primary)]">
+<body class="min-h-screen relative overflow-x-hidden selection:bg-orange-500 selection:text-white">
 
   <!-- ================= CIRCULAR GRADIENT BLOBS ================= -->
   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0" style="opacity: var(--blob-opacity); transition: opacity 0.3s ease;">
     <!-- Top-left area: large coral/salmon blob -->
-    <div class="absolute -top-32 -left-32 w-[550px] h-[550px] rounded-full blur-[100px] pointer-events-none" style="background: radial-gradient(circle, rgba(224, 169, 184, 0.22) 0%, rgba(224, 169, 184, 0.05) 60%, transparent 75%);"></div>
+    <div class="absolute -top-32 -left-32 w-[550px] h-[550px] rounded-full blur-[100px] pointer-events-none" style="background: radial-gradient(circle, rgba(255, 127, 102, 0.22) 0%, rgba(255, 127, 102, 0.05) 60%, transparent 75%);"></div>
     <!-- Top-right area: soft blue blob -->
     <div class="absolute top-12 -right-32 w-[550px] h-[550px] rounded-full blur-[110px] pointer-events-none" style="background: radial-gradient(circle, rgba(96, 165, 250, 0.20) 0%, rgba(96, 165, 250, 0.04) 60%, transparent 75%);"></div>
     <!-- Middle-left: lavender/violet blob -->
     <div class="absolute top-[38%] -left-40 w-[600px] h-[600px] rounded-full blur-[120px] pointer-events-none" style="background: radial-gradient(circle, rgba(167, 139, 250, 0.18) 0%, rgba(167, 139, 250, 0.03) 60%, transparent 75%);"></div>
     <!-- Center: very subtle warm amber blob -->
-    <div class="absolute top-[42%] left-[30%] w-[500px] h-[500px] rounded-full blur-[130px] pointer-events-none" style="background: radial-gradient(circle, rgba(214, 200, 160, 0.14) 0%, rgba(214, 200, 160, 0.02) 60%, transparent 75%);"></div>
+    <div class="absolute top-[42%] left-[30%] w-[500px] h-[500px] rounded-full blur-[130px] pointer-events-none" style="background: radial-gradient(circle, rgba(251, 191, 36, 0.14) 0%, rgba(251, 191, 36, 0.02) 60%, transparent 75%);"></div>
     <!-- Bottom-right: mint/emerald blob -->
     <div class="absolute -bottom-24 -right-24 w-[550px] h-[550px] rounded-full blur-[110px] pointer-events-none" style="background: radial-gradient(circle, rgba(52, 211, 153, 0.18) 0%, rgba(52, 211, 153, 0.03) 60%, transparent 75%);"></div>
   </div>
 
   <!-- Background Paper Grid Ambience -->
   <div class="fixed inset-0 grid-pattern pointer-events-none z-0"></div>
-  <div class="fixed inset-0 paper-grain pointer-events-none z-0"></div>
 
   <!-- ================= NAVBAR ================= -->
   <header class="sticky top-0 z-40 backdrop-blur-md transition-colors" style="background-color: var(--nav-bg); border-bottom: 1px solid var(--nav-border);">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-9 h-9 rounded-xl overflow-hidden border border-[color:var(--accent)] group-hover:border-[color:var(--accent)] transition-colors flex-shrink-0 bg-stone-100 dark:bg-stone-900 shadow-sm">
-          <img src="assets/img/profile/IMG_20260421_145154208_avatar.jpg" alt="Juan Francisco Ramírez Aguilera" class="w-full h-full object-cover object-[50%_18%]">
+        <div class="w-9 h-9 rounded-xl overflow-hidden border border-orange-500/40 group-hover:border-orange-500 transition-colors flex-shrink-0 bg-stone-100 dark:bg-stone-900 shadow-sm">
+          <img src="assets/img/profile/IMG_20260421_145154207.jpg" alt="Juan Francisco Ramírez Aguilera" class="w-full h-full object-cover object-[50%_18%]">
         </div>
         <div class="flex flex-col">
-          <span class="font-extrabold text-sm tracking-tight text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors">
+          <span class="font-extrabold text-sm tracking-tight text-[var(--text-primary)] group-hover:text-orange-500 transition-colors">
             Juan Francisco Ramírez Aguilera
           </span>
           <span class="text-[10px] font-semibold text-[var(--text-tertiary)] uppercase tracking-wider">
@@ -305,16 +279,16 @@
 
       <!-- Navigation Links -->
       <nav class="hidden md:flex items-center gap-7 text-xs font-semibold text-[var(--text-secondary)]">
-        <a href="#projects" class="hover:text-[color:var(--accent-text)] transition-colors">Games & Projects</a>
-        <a href="#studio" class="hover:text-[color:var(--accent-text)] transition-colors">Bionic Ape Studio</a>
-        <a href="#skills" class="hover:text-[color:var(--accent-text)] transition-colors">Disciplines & Tech</a>
-        <a href="#about" class="hover:text-[color:var(--accent-text)] transition-colors">About & Resume</a>
+        <a href="#projects" class="hover:text-orange-500 transition-colors">Games & Projects</a>
+        <a href="#studio" class="hover:text-orange-500 transition-colors">Bionic Ape Studio</a>
+        <a href="#skills" class="hover:text-orange-500 transition-colors">Disciplines & Tech</a>
+        <a href="#about" class="hover:text-orange-500 transition-colors">About & Resume</a>
       </nav>
 
       <!-- Theme Toggle & CTA Buttons -->
       <div class="flex items-center gap-2.5">
         <!-- Sun/Moon Theme Toggle -->
-        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme" title="Toggle theme" class="w-9 h-9 rounded-xl flex items-center justify-center border border-[var(--border)] bg-[var(--card-bg)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[color:var(--accent)] transition-all shadow-sm">
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme" title="Toggle theme" class="w-9 h-9 rounded-xl flex items-center justify-center border border-[var(--border)] bg-[var(--card-bg)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-orange-500/50 transition-all shadow-sm">
           <!-- Sun icon (shown in dark mode) -->
           <svg id="theme-icon-sun" class="w-4 h-4 hidden text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -328,7 +302,7 @@
         <a href="mailto:juanfran.ragui@gmail.com" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-xl theme-btn-secondary text-xs font-semibold">
           Get in Touch
         </a>
-        <a href="#contact" class="px-3.5 py-1.5 rounded-xl bg-[color:var(--accent-solid)] hover:bg-[color:var(--accent-solid-hover)] text-[color:var(--accent-solid-text)] text-xs font-bold transition-all shadow-sm hover:shadow-md">
+        <a href="#contact" class="px-3.5 py-1.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white text-xs font-bold transition-all shadow-sm hover:shadow-md">
           Contact Me
         </a>
       </div>
@@ -344,12 +318,12 @@
         <!-- Status Pill -->
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--card-bg)] border border-[var(--border)] text-xs font-medium text-[var(--text-secondary)] mb-6 shadow-sm">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Lead Game Designer @ <a href="https://bionicape.com" target="_blank" class="text-[color:var(--accent-text)] font-semibold hover:underline">Bionic Ape Studios</a> • Málaga, Spain</span>
+          <span>Lead Game Designer @ <a href="https://bionicape.com" target="_blank" class="text-orange-600 dark:text-orange-400 font-semibold hover:underline">Bionic Ape Studios</a> • Málaga, Spain</span>
         </div>
 
         <!-- Main Headline -->
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[var(--text-primary)] leading-[1.08] mb-6">
-          Designing gameplay systems, player retention & <span class="text-transparent bg-clip-text bg-gradient-to-r from-[color:var(--grad-a)] via-[color:var(--grad-b)] to-[color:var(--grad-c)]">interactive worlds.</span>
+          Designing gameplay systems, player retention & <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600">interactive worlds.</span>
         </h1>
 
         <p class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed font-normal mb-8">
@@ -368,7 +342,7 @@
 
         <!-- CTA Buttons -->
         <div class="flex flex-wrap items-center gap-3">
-          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-[color:var(--accent-solid)] hover:bg-[color:var(--accent-solid-hover)] text-[color:var(--accent-solid-text)] font-bold text-xs transition-all shadow-md hover:shadow-lg flex items-center gap-1.5">
+          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-all shadow-md hover:shadow-lg flex items-center gap-1.5">
             <span>Explore Games & Projects</span>
             <span>↓</span>
           </a>
@@ -385,14 +359,14 @@
       <div class="lg:col-span-5 xl:col-span-4 flex flex-col items-center">
         <div class="relative w-full max-w-sm group">
           <!-- Ambient Soft Colored Backdrop (watercolor style, soft colored shadow, not orange glow) -->
-          <div class="absolute -inset-2 bg-gradient-to-tr from-blue-200/50 via-violet-200/40 to-rose-200/40 dark:from-blue-950/20 dark:via-violet-950/20 dark:to-rose-950/20 rounded-3xl blur-xl opacity-80 group-hover:opacity-100 transition duration-700 pointer-events-none"></div>
+          <div class="absolute -inset-2 bg-gradient-to-tr from-orange-200/40 via-amber-200/30 to-blue-200/30 dark:from-orange-950/20 dark:via-amber-950/20 dark:to-blue-950/20 rounded-3xl blur-xl opacity-80 group-hover:opacity-100 transition duration-700 pointer-events-none"></div>
 
           <!-- Main Portrait Card -->
           <div class="relative rounded-2xl theme-card overflow-hidden">
             <!-- Image Container with optimized cropping for portrait -->
             <div class="relative aspect-[4/5] w-full overflow-hidden bg-stone-100 dark:bg-stone-900">
               <img 
-                src="assets/img/profile/IMG_20260421_145154208.jpg" 
+                src="assets/img/profile/IMG_20260421_145154207.jpg" 
                 alt="Juan Francisco Ramírez Aguilera" 
                 class="w-full h-full object-cover object-[50%_18%] group-hover:scale-105 transition-transform duration-700 filter brightness-95 contrast-105"
               />
@@ -400,7 +374,7 @@
               
               <!-- Floating Studio Tag on top right -->
               <div class="absolute top-3 right-3 px-2.5 py-1 rounded-lg badge-frosted text-[10px] font-semibold flex items-center gap-1.5 shadow-sm">
-                <span class="w-1.5 h-1.5 rounded-full bg-[color:var(--accent)]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
                 <span>Bionic Ape Studios</span>
               </div>
             </div>
@@ -410,7 +384,7 @@
               <div class="flex items-center justify-between">
                 <div>
                   <h3 class="font-extrabold text-[var(--text-primary)] text-sm">Juan Francisco Ramírez</h3>
-                  <p class="text-xs font-medium text-[color:var(--accent-text)]">Lead Game Designer & Systems</p>
+                  <p class="text-xs font-medium text-orange-600 dark:text-orange-400">Lead Game Designer & Systems</p>
                 </div>
                 <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md badge-emerald text-[10px] font-bold shadow-sm">
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -432,7 +406,7 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <span class="text-xs uppercase tracking-widest text-[color:var(--accent-text)] font-bold">
+          <span class="text-xs uppercase tracking-widest text-orange-600 dark:text-orange-400 font-bold">
             Shipped & Active Pipeline
           </span>
           <h2 class="text-3xl sm:text-4xl font-black text-[var(--text-primary)] tracking-tight mt-1">
@@ -465,14 +439,14 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 The Prison
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Lead Game Designer (Live-Ops & Systems)
               </p>
 
-              <blockquote class="text-xs text-[var(--text-secondary)] italic border-l-2 border-[color:var(--accent)] pl-3 mb-4 leading-relaxed">
+              <blockquote class="text-xs text-[var(--text-secondary)] italic border-l-2 border-orange-500/60 pl-3 mb-4 leading-relaxed">
                 "A modern reimagining of the classic late 90's prison game. Navigate a living penitentiary, strategize daily routines, form inmate alliances, or escape."
               </blockquote>
 
@@ -521,10 +495,10 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 Denbora
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Level Designer & Narrative Lead
               </p>
 
@@ -577,10 +551,10 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 Oblivio
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Lead Designer & Narrative Architect
               </p>
 
@@ -630,10 +604,10 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 Bion Clash
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Core Systems & Minigame Designer
               </p>
 
@@ -686,10 +660,10 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 Defense & Academic A.I. Sim
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Simulation Systems & Scenario Lead
               </p>
 
@@ -739,10 +713,10 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-[color:var(--accent-text)] transition-colors mb-1">
+              <h3 class="text-xl font-extrabold text-[var(--text-primary)] group-hover:text-orange-500 transition-colors mb-1">
                 Tercios: Honor and Glory
               </h3>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mb-3">
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mb-3">
                 Role: Game Designer (Economy & Levels)
               </p>
 
@@ -789,12 +763,12 @@
         <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-[var(--border)]">
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
             <a href="https://bionicape.com" target="_blank" class="block flex-shrink-0 group">
-              <div class="p-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border)] group-hover:border-[color:var(--accent)] transition-all shadow-sm">
+              <div class="p-3 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border)] group-hover:border-orange-500/60 transition-all shadow-sm">
                 <img src="assets/img/studio/BionicApeLogoOriginal.png" alt="Bionic Ape Studios Logo" class="h-10 sm:h-12 w-auto object-contain">
               </div>
             </a>
             <div>
-              <span class="text-xs text-[color:var(--accent-text)] font-bold uppercase tracking-wider">Engineering & Live-Ops Studio</span>
+              <span class="text-xs text-orange-600 dark:text-orange-400 font-bold uppercase tracking-wider">Engineering & Live-Ops Studio</span>
               <h3 class="text-2xl font-black text-[var(--text-primary)] tracking-tight mt-0.5">Bionic Ape Studios</h3>
               <p class="text-xs text-[var(--text-secondary)] mt-0.5">High-performance Unreal Engine engineering, server orchestration & proprietary technology.</p>
             </div>
@@ -806,7 +780,7 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-b border-[var(--border)] text-center">
           <!-- Stat 1: orange accent -->
-          <div class="p-4 bg-[var(--bg-secondary)] rounded-xl border border-[var(--border)] border-t-4 border-t-[color:var(--accent)] shadow-sm">
+          <div class="p-4 bg-[var(--bg-secondary)] rounded-xl border border-[var(--border)] border-t-4 border-t-orange-500 shadow-sm">
             <span class="text-3xl font-black text-[var(--text-primary)]">14+</span>
             <p class="text-xs font-semibold text-[var(--text-secondary)] mt-1">Unreal Engine Projects</p>
           </div>
@@ -828,7 +802,7 @@
         </div>
 
         <p class="pt-6 text-xs text-[var(--text-secondary)] leading-relaxed">
-          At Bionic Ape, I work alongside seasoned engineers and Computer Science veterans. My day-to-day connects high-level creative vision and game system balance directly with high-performance C++ architectures, dedicated server orchestrators (<a href="https://bionicape.com/hosting-suite/" target="_blank" class="text-[color:var(--accent-text)] font-semibold underline">Hosting Suite</a>), and Fab / Marketplace plugins (<a href="https://bionicape.com/premium-plugins/" target="_blank" class="text-[color:var(--accent-text)] font-semibold underline">Portals & Quest Plugins</a>).
+          At Bionic Ape, I work alongside seasoned engineers and Computer Science veterans. My day-to-day connects high-level creative vision and game system balance directly with high-performance C++ architectures, dedicated server orchestrators (<a href="https://bionicape.com/hosting-suite/" target="_blank" class="text-orange-600 dark:text-orange-400 font-semibold underline">Hosting Suite</a>), and Fab / Marketplace plugins (<a href="https://bionicape.com/premium-plugins/" target="_blank" class="text-orange-600 dark:text-orange-400 font-semibold underline">Portals & Quest Plugins</a>).
         </p>
       </div>
     </div>
@@ -839,7 +813,7 @@
     <div class="max-w-6xl mx-auto px-6">
       
       <div class="text-center max-w-xl mx-auto mb-12">
-        <span class="text-xs uppercase tracking-widest text-[color:var(--accent-text)] font-bold">
+        <span class="text-xs uppercase tracking-widest text-orange-600 dark:text-orange-400 font-bold">
           Core Competencies
         </span>
         <h2 class="text-3xl font-black text-[var(--text-primary)] tracking-tight mt-1">
@@ -925,18 +899,18 @@
         
         <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-[var(--border)]">
           <div class="flex items-center gap-4">
-            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-[color:var(--accent)] shadow-md flex-shrink-0 bg-stone-100 dark:bg-stone-900">
-              <img src="assets/img/profile/IMG_20260421_145154208_avatar.jpg" alt="Juan Francisco Ramírez Aguilera" class="w-full h-full object-cover object-[50%_18%]">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-orange-500/40 shadow-md flex-shrink-0 bg-stone-100 dark:bg-stone-900">
+              <img src="assets/img/profile/IMG_20260421_145154207.jpg" alt="Juan Francisco Ramírez Aguilera" class="w-full h-full object-cover object-[50%_18%]">
             </div>
             <div>
               <h2 class="text-2xl font-black text-[var(--text-primary)] tracking-tight">Juan Francisco Ramírez Aguilera</h2>
-              <p class="text-xs font-semibold text-[color:var(--accent-text)] mt-0.5">Lead Game Designer • Bionic Ape Studios</p>
+              <p class="text-xs font-semibold text-orange-600 dark:text-orange-400 mt-0.5">Lead Game Designer • Bionic Ape Studios</p>
               <p class="text-[11px] font-medium text-[var(--text-tertiary)] mt-0.5">Málaga, Spain • Full Professional English (C1)</p>
             </div>
           </div>
           <!-- Download CV Buttons -->
           <div class="flex flex-wrap items-center gap-2.5">
-            <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_D.pdf" target="_blank" download class="px-4 py-2 rounded-xl bg-[color:var(--accent-solid)] hover:bg-[color:var(--accent-solid-hover)] text-[color:var(--accent-solid-text)] font-bold text-xs transition-colors flex items-center gap-1.5 shadow-sm">
+            <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_D.pdf" target="_blank" download class="px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-colors flex items-center gap-1.5 shadow-sm">
               <span>📄 Download Game Design CV</span>
             </a>
             <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_P.pdf" target="_blank" download class="px-4 py-2 rounded-xl theme-btn-secondary font-bold text-xs transition-colors flex items-center gap-1.5 shadow-sm">
@@ -967,7 +941,7 @@
   <footer id="contact" class="relative z-10 py-16 md:py-20 border-t border-[var(--border)]" style="background-color: var(--bg-secondary);">
     <div class="max-w-6xl mx-auto px-6 text-center">
       
-      <span class="text-xs uppercase tracking-widest text-[color:var(--accent-text)] font-bold">Let's Connect</span>
+      <span class="text-xs uppercase tracking-widest text-orange-600 dark:text-orange-400 font-bold">Let's Connect</span>
       <h2 class="text-3xl sm:text-4xl font-black text-[var(--text-primary)] tracking-tight mt-2 mb-4">
         Ready to build memorable games together?
       </h2>
@@ -976,7 +950,7 @@
       </p>
 
       <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold mb-12">
-        <a href="mailto:juanfran.ragui@gmail.com" class="px-6 py-3 rounded-xl bg-[color:var(--accent-solid)] hover:bg-[color:var(--accent-solid-hover)] text-[color:var(--accent-solid-text)] transition-all shadow-md hover:shadow-lg">
+        <a href="mailto:juanfran.ragui@gmail.com" class="px-6 py-3 rounded-xl bg-orange-600 hover:bg-orange-500 text-white transition-all shadow-md hover:shadow-lg">
           ✉️ juanfran.ragui@gmail.com
         </a>
         <a href="tel:+34689863298" class="px-6 py-3 rounded-xl theme-btn-secondary transition-colors">
@@ -986,7 +960,7 @@
 
       <div class="pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row items-center justify-between text-xs text-[var(--text-tertiary)] gap-4">
         <span>© 2026 Juan Francisco Ramírez Aguilera. All rights reserved.</span>
-        <span>Portfolio: <a href="https://srjuanfri.github.io" class="text-[color:var(--accent-text)] font-semibold hover:underline">srjuanfri.github.io</a></span>
+        <span>Portfolio: <a href="https://srjuanfri.github.io" class="text-orange-600 dark:text-orange-400 font-semibold hover:underline">srjuanfri.github.io</a></span>
       </div>
 
     </div>
@@ -1105,7 +1079,7 @@
 
       document.getElementById('modal-content').innerHTML = `
         ${imgHtml}
-        <span class="text-xs font-bold text-[color:var(--accent-text)] uppercase tracking-widest">${d.tag}</span>
+        <span class="text-xs font-bold text-orange-600 dark:text-orange-400 uppercase tracking-widest">${d.tag}</span>
         <h2 class="text-2xl font-black text-[var(--text-primary)] tracking-tight mt-1 mb-1">${d.title}</h2>
         <p class="text-xs font-medium text-[var(--text-secondary)] mb-4">${d.role}</p>
 
@@ -1127,7 +1101,7 @@
           </div>
 
           <div class="bg-[var(--bg-secondary)] p-4 rounded-xl border border-[var(--border)]">
-            <h4 class="font-bold text-xs uppercase tracking-wider mb-1 text-[color:var(--accent-text)]">3. Verified Outcome & Impact</h4>
+            <h4 class="font-bold text-xs uppercase tracking-wider mb-1 text-orange-600 dark:text-orange-400">3. Verified Outcome & Impact</h4>
             <p class="text-xs leading-relaxed text-[var(--text-secondary)]">${d.takeaway}</p>
           </div>
         </div>
