@@ -1,59 +1,47 @@
-Juan Francisco Ramírez Aguilera
-Lead Game Designer & Associate Producer | Studio Operations Specialist
-Hybrid Profile: Bridging creative vision, mathematical gameplay systems, and business delivery. Proven experience leading game design pipelines in Unreal Engine 5 and Unity, while managing studio operations, multi-platform publishing (Steam & Epic Games Store), and cross-functional team milestones at Bionic Ape Studios.
- Live Portfolio: https://srjuanfri.github.io
- Current Studio: Bionic Ape Studios
- Location: Málaga, Spain (Available for Remote & Relocation)
- Direct Resume Downloads:  Game Design CV |  Production & Operations CV
- Two Core Professional Tracks
-┌──────────────────────────────────────────┬──────────────────────────────────────────┐
-│ 🎮 GAME DESIGN & SYSTEMS LEADERSHIP      │ 📋 PRODUCTION, OPERATIONS & PROJECT MGMT │
-├──────────────────────────────────────────┼──────────────────────────────────────────┤
-│ • Core Gameplay & Progression Mechanics  │ • End-to-End Steamworks & EGS Publishing │
-│ • Economy Balancing (Faucets & Sinks)    │ • Agile / Scrum Sprint Planning (Jira)   │
-│ • Spatial Level Design & Greyboxing      │ • Milestone Tracking & 100% On-Time Dlv. │
-│ • Live-Ops Loops & Churn Reduction       │ • B2B Client Contracts & Defense (NDA)   │
-│ • Serious Games & Cognitive Frameworks   │ • Cross-Disciplinary Triage (QA/Art/Web) │
-│ • Prototyping in Unreal Engine 5 & Unity │ • Team Mentorship (Juniors & Interns)    │
-└──────────────────────────────────────────┴──────────────────────────────────────────┘
-​
- Shipped Titles & Commercial Portfolio
-1. The Prison (MMORPG • PC / Steam Deck / Linux / Mac)
-As Game Designer: Directed post-launch live-ops retention loops and inmate progression curves, boosting 30-day player retention (D30) by +22% and re-engaging churned players.
-As Producer / Operations: Managed backend store compliance on Steam and Epic Games Store, coordinated release sprints, QA bug-triaging passes, and community live telemetry.
-Store Links: Steam Store | Epic Games Store | Studio Overview
-2. Denbora (3D First-Person Puzzle • Unreal Engine)
-Award:  Recipient of the official Game Creation Grant (2023) from the Community of Madrid.
-As Level & Narrative Designer: Engineered causality-based puzzle chambers across two timelines (present and future). Designed non-intrusive spatial pacing and environmental cues to guide players with zero tutorial text walls.
-As Project Lead: Oversaw milestone deliverables, grant compliance documentation, and store submission pipelines.
-Store Links: Steam Store | Epic Games Store | Studio Overview
-3. Oblivio (Philosophical Narrative & Serious Game)
-Award:  Recipient of the official Game Creation Grant (2023) from the Community of Madrid.
-Design & Academic Foundation: Commercial implementation of Bachelor/Master thesis on psychiatry and game mechanics. Formulated the Dual State Mechanic (transitions between Congruent reality and Altered dementia distortions) to authentically represent Alzheimer's disease.
-Store Links: Steam Store | Studio Overview
-4. Bion Clash (Party Royale • Cross-Play Multiplayer)
-As Systems Designer: Architected procedural minigame rule modules (races, hide-and-seek, social deduction) in a comically dystopian universe. Structured ethical, non-pay-to-win F2P progression curves and cosmetic battle passes.
-Store Links: Steam Store | Epic Games Store | Studio Overview
-5. High-Fidelity Defense Simulations & University A.I. Research (Under NDA)
-Systems Architecture: Formulated complex operational scenario logic, behavior tree parameters, and deterministic pass/fail matrices for Defense sector contracts.
-Project Management: Bridged theoretical machine learning models from university research partners with real-time 3D Unreal Engine client builds, guaranteeing 100% on-time milestone delivery.
-6. Tercios: Honor and Glory (Tree Games Studios • Tactical Strategy)
-Economy & Design Coordination: Built mathematical resource balance models (faucets/sinks, unit maintenance upkeep) and authored comprehensive combat GDD modules for historical Tercio formations.
- Toolset & Methodologies
-Category
-Tools & Competencies
-Game Engines
-Unreal Engine 5 (Blueprints, Greyboxing, Gameplay Framework), Unity (C# / Scripting)
-Production & PM
-Agile / Scrum, Jira, Confluence, Trello, Sprint Planning, Backlog Grooming, Risk Triage
-Operations & Publishing
-Steamworks, Epic Games Store Developer Portal, B2B Client Negotiations, QA Acceptance Testing
-Design & Documentation
-System Design, Level Design, Live-Ops Retention, Economy Balance, GDD Authoring, Miro, Blender
-Languages
-English (C1 - Full Professional Proficiency), Spanish (Native), French (Basic)
- Contact & Links
- Portfolio Website: https://srjuanfri.github.io
- Email: juanfran.ragui@gmail.com
- Phone: +34 689 863 298
- Studio: Bionic Ape Studios
+# Juan Francisco Ramírez Aguilera
+**Lead Game Designer & Associate Producer | Studio Operations Specialist**  
+*Málaga, Spain • Open to Remote & Relocation*
+[🌐 Live Portfolio Web](https://srjuanfri.github.io) • [📄 Game Design CV (PDF)](https://srjuanfri.github.io/assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_D.pdf) • [📋 Production CV (PDF)](https://srjuanfri.github.io/assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_P.pdf) • [🏢 Bionic Ape](https://bionicape.com)
+---
+### ⚡ Hybrid Profile
+> Bridging creative vision, mathematical gameplay systems, and commercial execution. Experienced leading game design pipelines in **Unreal Engine 5** and **Unity**, while managing studio operations, multi-platform publishing (**Steam & Epic Games Store**), and cross-functional teams at **Bionic Ape Studios**.
+| 🎮 Game Design & Systems | 📋 Production & Operations |
+| :--- | :--- |
+| **System & Mechanics Design** | **Publishing Pipelines** (Steamworks & EGS) |
+| **Economy Balancing** (Faucets & Sinks) | **Agile / Scrum** Sprint Planning (Jira) |
+| **Level Design & Greyboxing** | **Milestone Delivery** (100% on-time record) |
+| **Live-Ops & Retention** (D30 loops) | **B2B Client Negotiations** (Defense NDA) |
+| **Serious Games** (Cognitive frameworks) | **Cross-Disciplinary Triage** (QA, Art, Web) |
+| **Rapid Prototyping** (UE5 & Unity) | **Team Mentorship** (Juniors & Interns) |
+---
+### 🎮 Shipped Titles & Commercial Projects
+#### 1. The Prison *(MMORPG • Steam & Epic Games Store)*
+* **Game Design:** Directed post-launch live-ops retention loops, progression balance, and re-engaged churned players (+22% D30 retention).
+* **Production & Ops:** Managed Steamworks/EGS backend configurations, release patch schedules, and QA bug-triaging pipelines.
+* **Links:** [Steam Store](https://store.steampowered.com/app/1889920/The_Prison/) • [Epic Games Store](https://store.epicgames.com/es-ES/p/the-prison-f6cb95) • [Studio Page](https://bionicape.com/the-prison/)
+#### 2. Denbora *(3D First-Person Puzzle • Unreal Engine)*
+* **Award:** 🏆 *Winner of the 2023 Video Game Creation Grant (Community of Madrid)*
+* **Level & Narrative Design:** Built causality-based puzzle chambers across present and future timelines with non-verbal environmental guidance.
+* **Production:** Oversaw milestone deliverables and official grant compliance documentation.
+* **Links:** [Steam Store](https://store.steampowered.com/app/2325840/Denbora/) • [Epic Games Store](https://store.epicgames.com/p/denbora-8a0fc3) • [Studio Page](https://bionicape.com/denbora/)
+#### 3. Oblivio *(Philosophical Narrative & Serious Game)*
+* **Award:** 🏆 *Winner of the 2023 Video Game Creation Grant (Community of Madrid)*
+* **Design & Thesis:** Formulated the **Dual State Mechanic** (Congruent vs. Altered dementia states) to authentically represent Alzheimer's disease through cognitive puzzle distortion.
+* **Links:** [Steam Store](https://store.steampowered.com/app/2211340/Oblivio/) • [Studio Page](https://bionicape.com/oblivio/)
+#### 4. Bion Clash *(Party Royale • Cross-Play Multiplayer)*
+* **Systems Design:** Procedural minigames (races, hide-and-seek, social deduction) with an ethical F2P economy (non-pay-to-win battle pass progression).
+* **Links:** [Steam Store](https://store.steampowered.com/app/2757510/Bion_Clash/) • [Epic Games Store](https://store.epicgames.com/es-ES/p/bion-clash-276838) • [Studio Page](https://bionicape.com/bion-clash/)
+#### 5. Defense Simulations & Applied A.I. Research *(Under NDA)*
+* **Systems & Management:** High-fidelity VR simulation for Defense sector clients, integrating university machine learning research into Unreal Engine.
+#### 6. Tercios: Honor and Glory *(Tactical Strategy • Tree Games Studios)*
+* **Economy Design:** Modeled historical army economics, combat exchange ratios, resource curves, and authored comprehensive GDDs.
+---
+### 🛠️ Skills & Technologies
+* **Engines & Tech:** Unreal Engine 5 (Blueprints), Unity (C#), Git / GitHub, Blender.
+* **Production & Tools:** Jira, Confluence, Miro, Steamworks, Epic Games Portal, Agile/Scrum.
+* **Languages:** English (C1 - Full Professional Proficiency), Spanish (Native), French (Basic).
+---
+### 📬 Contact
+* **Email:** [juanfran.ragui@gmail.com](mailto:juanfran.ragui@gmail.com)
+* **Phone:** +34 689 863 298
+* **Website:** [https://srjuanfri.github.io](https://srjuanfri.github.io)
