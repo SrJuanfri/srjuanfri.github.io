@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Francisco Ramírez Aguilera | Lead Game Designer & Systems Specialist</title>
-  <meta name="description" content="Portfolio of Juan Francisco Ramírez Aguilera - Lead Game Designer specializing in Systems Design, Level Design, Live-Ops, and High-Fidelity Simulations (Unreal Engine 5 & Unity).">
+  <meta name="description" content="Official Game Design Portfolio of Juan Francisco Ramírez Aguilera. Lead Game Designer at Bionic Ape Studios. Specialist in Systems, Level Design, Live-Ops, and Serious Simulations.">
   
   <!-- Tailwind CSS & Fonts -->
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
@@ -16,7 +16,7 @@
     :root {
       --bg: #090d16;
       --card: #111827;
-      --accent: #f97316; /* Industrial Amber / Orange */
+      --accent: #f97316;
       --accent-glow: rgba(249, 115, 22, 0.15);
     }
     body {
@@ -40,12 +40,20 @@
         linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     }
-    .project-card:hover .project-thumb-overlay {
-      opacity: 0.95;
-    }
     .project-card:hover .project-border {
       border-color: rgba(249, 115, 22, 0.5);
-      box-shadow: 0 0 25px -5px rgba(249, 115, 22, 0.2);
+      box-shadow: 0 0 30px -5px rgba(249, 115, 22, 0.2);
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      transition: all 0.2s ease;
     }
   </style>
 </head>
@@ -64,18 +72,18 @@
         </span>
         <div class="flex flex-col">
           <span class="font-bold text-sm tracking-tight text-white group-hover:text-orange-400 transition-colors">
-            Juan Francisco Ramírez
+            Juan Francisco Ramírez Aguilera
           </span>
           <span class="text-[10px] font-mono-tag text-slate-400 uppercase tracking-widest">
-            Lead Game Designer
+            Lead Game Designer • Bionic Ape
           </span>
         </div>
       </a>
 
       <!-- Navigation Links -->
       <nav class="hidden md:flex items-center gap-7 text-xs font-medium text-slate-300">
-        <a href="#projects" class="hover:text-white transition-colors">Shipped Titles</a>
-        <a href="#special-projects" class="hover:text-white transition-colors">Defense & A.I.</a>
+        <a href="#projects" class="hover:text-white transition-colors">Games & Projects</a>
+        <a href="#studio" class="hover:text-white transition-colors">Bionic Ape Studio</a>
         <a href="#skills" class="hover:text-white transition-colors">Disciplines & Tech</a>
         <a href="#about" class="hover:text-white transition-colors">About & Resume</a>
       </nav>
@@ -93,12 +101,12 @@
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative z-10 pt-20 pb-16 md:pt-28 md:pb-24 max-w-6xl mx-auto px-6">
+  <section class="relative z-10 pt-16 pb-14 md:pt-24 md:pb-20 max-w-6xl mx-auto px-6">
     <div class="max-w-3xl">
       <!-- Status Pill -->
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono-tag text-slate-300 mb-6 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span>Based in Málaga, Spain • Open to Remote & Relocation</span>
+        <span>Lead Game Designer @ <a href="https://bionicape.com" target="_blank" class="text-orange-400 hover:underline">Bionic Ape</a> • Málaga, Spain</span>
       </div>
 
       <!-- Main Headline -->
@@ -107,33 +115,36 @@
       </h1>
 
       <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal mb-8">
-        I am a <strong>Lead Game Designer</strong> with 2+ years leading core gameplay systems, live-ops, and level pacing in <strong>Unreal Engine 5</strong> and <strong>Unity</strong>. Experienced across commercial PC/Console titles (Steam/EGS), high-fidelity Defense simulations under NDA, and applied university A.I. research.
+        Lead Game Designer specializing in <strong>System Design</strong>, <strong>Level Pacing</strong>, and <strong>Live-Ops</strong> across <strong>Unreal Engine 5</strong> and <strong>Unity</strong>. Proven track record directing commercial releases on Steam and Epic Games Store, structuring confidential Defense simulations, and designing award-winning narrative & cognitive game mechanics.
       </p>
 
       <!-- Key Tech Chips -->
-      <div class="flex flex-wrap gap-2 mb-10 text-xs font-mono-tag">
+      <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono-tag">
         <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🎮 System Design</span>
         <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">📐 Level Design & Greybox</span>
-        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🔄 Live-Ops & Retention</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🔄 Live-Ops Retention</span>
         <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">⚡ Unreal Engine 5 (BP)</span>
         <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🕹️ Unity</span>
-        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🚀 Steam / EGS Publishing</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">🚀 Steamworks & EGS</span>
       </div>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-wrap items-center gap-4">
-        <a href="#projects" class="px-6 py-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-bold text-sm transition-all shadow-lg hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] flex items-center gap-2">
-          <span>Explore Shipped Works</span>
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="#projects" class="px-5 py-2.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-all shadow-lg hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] flex items-center gap-1.5">
+          <span>Explore Games & Projects</span>
           <span>↓</span>
         </a>
-        <a href="mailto:juanfran.ragui@gmail.com" class="px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-sm transition-colors flex items-center gap-2">
-          <span>✉️ juanfran.ragui@gmail.com</span>
+        <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_D.pdf" target="_blank" download class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-xs transition-colors flex items-center gap-1.5">
+          <span>📄 Download Game Design CV</span>
+        </a>
+        <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_P.pdf" target="_blank" download class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-xs transition-colors flex items-center gap-1.5">
+          <span>📋 Download Production CV</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= SHIPPED TITLES / CASE STUDIES ================= -->
+  <!-- ================= GAMES & PROJECTS SHOWCASE ================= -->
   <section id="projects" class="relative z-10 py-16 border-t border-slate-800/80 bg-slate-950/60">
     <div class="max-w-6xl mx-auto px-6">
       
@@ -141,228 +152,346 @@
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <span class="text-xs font-mono-tag uppercase tracking-widest text-orange-400 font-semibold">
-            Featured Portfolio
+            Shipped & Active Pipeline
           </span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display mt-1">
-            Shipped Titles & In-Development Works
+            Featured Games & Case Studies
           </h2>
         </div>
         <p class="text-xs text-slate-400 font-mono-tag max-w-sm">
-          Case studies broken down by core design problem, mechanics implementation, and verified results.
+          Commercial titles developed at Bionic Ape & Tree Games Studios, linked directly to verified Steam store pages and official studio documentation.
         </p>
       </div>
 
-      <!-- PROJECTS GRID -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- PROJECTS GRID (6 COMPLETE TILES) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- ================= CARD 1: THE PRISON ================= -->
-        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300">
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
           <div>
             <!-- Header Badges -->
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-red-950/80 border border-red-800/80 text-red-300">
                 MMORPG • Live-Ops
               </span>
-              <span class="text-xs font-mono-tag text-slate-500 font-medium">Bionic Ape • 2024</span>
+              <span class="text-[11px] font-mono-tag text-slate-500 font-medium">Released 2024</span>
             </div>
 
-            <h3 class="text-2xl font-bold text-white font-display mb-2">
+            <h3 class="text-xl font-bold text-white font-display mb-1">
               The Prison
             </h3>
-            <p class="text-xs font-mono-tag text-orange-400/90 mb-4">
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
               Role: Lead Game Designer (Live-Ops & Systems)
             </p>
 
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Post-launch live-operations and progression loop overhaul for the MMORPG <em>The Prison</em>. Directed retention mechanics and restructured seasonal reward pipelines specifically designed to re-engage churned players.
-            </p>
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-orange-500/50 pl-2.5 mb-4">
+              "A modern reimagining of the classic late 90's prison game. Navigate a living penitentiary, strategize daily routines, form inmate alliances, or escape."
+            </blockquote>
 
-            <!-- Design Highlights Checklist -->
-            <div class="space-y-2.5 bg-slate-950/70 p-4 rounded-xl border border-slate-800/80 mb-6 text-xs text-slate-300">
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Player Retention & Churn Recovery:</strong> Redesigned daily/weekly reward cadence and event schedules to bring lapsed players back.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Economy Balancing:</strong> Re-equilibrated loot drop frequencies, trade sinks, and consumable drains.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Telemetry-Driven Iteration:</strong> Analyzed player data telemetry to identify level drop-off friction points.</span>
-              </div>
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Retention Loops:</strong> Redesigned daily event cadence and reward progression, reducing player churn.</p>
+              <p>• <strong>Economy Balancing:</strong> Rebalanced resource sinks, contraband trades, and in-game market items.</p>
+              <p>• <strong>Platforms:</strong> Windows, Steam Deck, Linux & MacOS.</p>
             </div>
           </div>
 
-          <!-- Bottom Footer Link -->
-          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-[11px] font-mono-tag text-slate-400">Platform: PC • Steam</span>
-            <button onclick="openModal('modal-prison')" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1">
-              <span>View Case Study</span> <span>→</span>
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://store.steampowered.com/app/1889920/The_Prison/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>🎮 Steam Store</span>
+              </a>
+              <a href="https://store.epicgames.com/es-ES/p/the-prison-f6cb95" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>⚡ Epic Games</span>
+              </a>
+              <a href="https://bionicape.com/the-prison/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700">
+                <span>🌐 Studio Page</span>
+              </a>
+            </div>
+            <button onclick="openModal('modal-prison')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Design Breakdown →
             </button>
           </div>
         </article>
 
         <!-- ================= CARD 2: DENBORA ================= -->
-        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300">
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
           <div>
             <!-- Header Badges -->
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-sky-950/80 border border-sky-800/80 text-sky-300">
                 3D Puzzle Adventure
               </span>
-              <span class="text-xs font-mono-tag text-slate-500 font-medium">Bionic Ape</span>
+              <span class="px-2 py-0.5 rounded text-[9.5px] font-mono-tag font-bold bg-amber-950/80 text-amber-300 border border-amber-800/60">
+                🏆 Madrid Grant 2023
+              </span>
             </div>
 
-            <h3 class="text-2xl font-bold text-white font-display mb-2">
+            <h3 class="text-xl font-bold text-white font-display mb-1">
               Denbora
             </h3>
-            <p class="text-xs font-mono-tag text-orange-400/90 mb-4">
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
               Role: Level Designer & Narrative Lead
             </p>
 
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Orchestrated environmental storytelling, spatial pacing, and progressive puzzle difficulty curves. Focused on communicating core time-manipulation mechanics purely through environment cues and zero intrusive tutorial text.
-            </p>
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-sky-500/50 pl-2.5 mb-4">
+              "Break the laws of entropy and jump between present and future timelines to solve causality puzzles while challenged by the cynical AI Dirua."
+            </blockquote>
 
-            <!-- Design Highlights Checklist -->
-            <div class="space-y-2.5 bg-slate-950/70 p-4 rounded-xl border border-slate-800/80 mb-6 text-xs text-slate-300">
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Greyboxing & Blockouts:</strong> Built iterative whitebox level layouts in Unreal Engine, rigorously testing player sightlines and navigation.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Environmental Storytelling:</strong> Crafted narrative beats embedded into architectural ruins and visual landmarks.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Pacing Curves:</strong> Designed progressive puzzle complexity layers to sustain player flow state.</span>
-              </div>
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Timeline Puzzles:</strong> Actions executed in the present dynamically reshape the architectural future.</p>
+              <p>• <strong>Greybox Spatial Design:</strong> Non-intrusive player guidance using lighting, sightlines, and zero text tutorials.</p>
+              <p>• <strong>Emergent Solutions:</strong> Modular tools allowing multiple logical solutions per chamber.</p>
             </div>
           </div>
 
-          <!-- Bottom Footer Link -->
-          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-[11px] font-mono-tag text-slate-400">Engine: Unreal Engine</span>
-            <button onclick="openModal('modal-denbora')" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1">
-              <span>View Case Study</span> <span>→</span>
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://store.steampowered.com/app/2325840/Denbora/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>🎮 Steam Store</span>
+              </a>
+              <a href="https://store.epicgames.com/p/denbora-8a0fc3" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>⚡ Epic Games</span>
+              </a>
+              <a href="https://bionicape.com/denbora/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700">
+                <span>🌐 Studio Page</span>
+              </a>
+            </div>
+            <button onclick="openModal('modal-denbora')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Design Breakdown →
             </button>
           </div>
         </article>
 
-        <!-- ================= CARD 3: DEFENSE & A.I. SIMULATIONS ================= -->
-        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300">
+        <!-- ================= CARD 3: OBLIVIO ================= -->
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
           <div>
             <!-- Header Badges -->
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-amber-950/80 border border-amber-800/80 text-amber-300">
-                Defense Simulation & A.I. (NDA)
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-purple-950/80 border border-purple-800/80 text-purple-300">
+                Philosophical Narrative
               </span>
-              <span class="text-xs font-mono-tag text-slate-500 font-medium">Bionic Ape • 2024–Present</span>
+              <span class="px-2 py-0.5 rounded text-[9.5px] font-mono-tag font-bold bg-amber-950/80 text-amber-300 border border-amber-800/60">
+                🏆 Madrid Grant 2023
+              </span>
             </div>
 
-            <h3 class="text-2xl font-bold text-white font-display mb-2">
-              High-Fidelity Defense Simulations
+            <h3 class="text-xl font-bold text-white font-display mb-1">
+              Oblivio
             </h3>
-            <p class="text-xs font-mono-tag text-orange-400/90 mb-4">
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
+              Role: Lead Designer & Narrative Architect
+            </p>
+
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-purple-500/50 pl-2.5 mb-4">
+              "An evocative first-person journey into the descent of Alzheimer’s disease. Shift between memories and reality before defining moments vanish."
+            </blockquote>
+
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Dual State Mechanic:</strong> Seamless transitions between 'Congruent' (clear reality) and 'Altered' (surreal distortion).</p>
+              <p>• <strong>Cognitive Recall Puzzles:</strong> Mechanics mimicking memory reconstruction that progressively deteriorate.</p>
+              <p>• <strong>Academic Foundation:</strong> Real-world realization of Bachelor/Master thesis on psychiatry in interactive media.</p>
+            </div>
+          </div>
+
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://store.steampowered.com/app/2211340/Oblivio/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>🎮 Steam Store</span>
+              </a>
+              <a href="https://bionicape.com/oblivio/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700">
+                <span>🌐 Studio Page</span>
+              </a>
+            </div>
+            <button onclick="openModal('modal-oblivio')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Design Breakdown →
+            </button>
+          </div>
+        </article>
+
+        <!-- ================= CARD 4: BION CLASH ================= -->
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
+          <div>
+            <!-- Header Badges -->
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-pink-950/80 border border-pink-800/80 text-pink-300">
+                Party Royale • Multiplayer
+              </span>
+              <span class="text-[11px] font-mono-tag text-slate-500 font-medium">In Development</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white font-display mb-1">
+              Bion Clash
+            </h3>
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
+              Role: Core Systems & Minigame Designer
+            </p>
+
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-pink-500/50 pl-2.5 mb-4">
+              "Chaotic free-to-play party royale set in a satirical sci-fi universe inspired by Futurama. Navigate a tiered society across Sky, Surface, and Underground."
+            </blockquote>
+
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Procedural Minigames:</strong> Fast-paced races, social deduction challenges, and physics-driven gauntlets.</p>
+              <p>• <strong>Ethical F2P Economy:</strong> Cosmetic battle passes and progression pacing strictly avoiding pay-to-win mechanics.</p>
+              <p>• <strong>Cross-Play Ready:</strong> Low-poly, cell-shaded optimization across PC, Consoles, and Mobile.</p>
+            </div>
+          </div>
+
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://store.steampowered.com/app/2757510/Bion_Clash/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>🎮 Steam Store</span>
+              </a>
+              <a href="https://store.epicgames.com/es-ES/p/bion-clash-276838" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+                <span>⚡ Epic Games</span>
+              </a>
+              <a href="https://bionicape.com/bion-clash/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700">
+                <span>🌐 Studio Page</span>
+              </a>
+            </div>
+            <button onclick="openModal('modal-bion')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Design Breakdown →
+            </button>
+          </div>
+        </article>
+
+        <!-- ================= CARD 5: DEFENSE SIMULATIONS ================= -->
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
+          <div>
+            <!-- Header Badges -->
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-amber-950/80 border border-amber-800/80 text-amber-300">
+                Serious Games • Sim Logic
+              </span>
+              <span class="text-[11px] font-mono-tag text-slate-500 font-medium">Client NDA</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white font-display mb-1">
+              Defense & Academic A.I. Sim
+            </h3>
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
               Role: Simulation Systems & Scenario Lead
             </p>
 
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Managed deliverables for confidential Defense simulation contracts. Designed high-fidelity interactive scenario logic, behavior tree parameters, and coordinated applied A.I. research initiatives with university partners.
-            </p>
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-amber-500/50 pl-2.5 mb-4">
+              "High-fidelity real-time simulation pipelines for defense sector clients, bridging theoretical university A.I. research with Unreal Engine."
+            </blockquote>
 
-            <!-- Design Highlights Checklist -->
-            <div class="space-y-2.5 bg-slate-950/70 p-4 rounded-xl border border-slate-800/80 mb-6 text-xs text-slate-300">
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Scenario Logic Architecture:</strong> Authored interactive branch trees, mission fail/success states, and tactical operator rules.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Applied A.I. Coordination:</strong> Bridged academic research models into real-time interactive game engines.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Serious Games Frameworks:</strong> Translated complex real-world operational doctrine into measurable interactive metrics.</span>
-              </div>
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Scenario State Logic:</strong> Formulated complex tactical decision trees and objective pass/fail condition networks.</p>
+              <p>• <strong>A.I. Research Integration:</strong> Standardized communication protocols between deep learning models and real-time 3D simulation.</p>
+              <p>• <strong>Contract Fulfillment:</strong> Managed deliverable milestones for institutional partners under strict compliance.</p>
             </div>
           </div>
 
-          <!-- Bottom Footer Link -->
-          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-[11px] font-mono-tag text-slate-400">Confidential • Client NDA</span>
-            <button onclick="openModal('modal-defense')" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1">
-              <span>View Overview</span> <span>→</span>
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="store-badge bg-slate-950 text-slate-400 border border-slate-800">
+                <span>🔒 Confidential NDA</span>
+              </span>
+              <a href="https://bionicape.com/about/" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700">
+                <span>🌐 Bionic Ape Engineering</span>
+              </a>
+            </div>
+            <button onclick="openModal('modal-defense')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Overview Breakdown →
             </button>
           </div>
         </article>
 
-        <!-- ================= CARD 4: TERCIOS: HONOR AND GLORY ================= -->
-        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300">
+        <!-- ================= CARD 6: TERCIOS ================= -->
+        <article class="project-card rounded-2xl bg-slate-900/90 border border-slate-800 project-border p-6 flex flex-col justify-between transition-all duration-300">
           <div>
             <!-- Header Badges -->
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-0.5 rounded text-[10px] font-mono-tag font-bold uppercase bg-emerald-950/80 border border-emerald-800/80 text-emerald-300">
                 Strategy & Tactics
               </span>
-              <span class="text-xs font-mono-tag text-slate-500 font-medium">Tree Games Studios • 2023</span>
+              <span class="text-[11px] font-mono-tag text-slate-500 font-medium">Tree Games Studios</span>
             </div>
 
-            <h3 class="text-2xl font-bold text-white font-display mb-2">
+            <h3 class="text-xl font-bold text-white font-display mb-1">
               Tercios: Honor and Glory
             </h3>
-            <p class="text-xs font-mono-tag text-orange-400/90 mb-4">
+            <p class="text-xs font-mono-tag text-orange-400/90 mb-3">
               Role: Game Designer (Economy & Levels)
             </p>
 
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Historical strategy title set in 16th-17th century Europe. Designed the mathematical in-game economy models, troop progression curves, and authored central Game Design Documents (GDDs) ensuring historical accuracy and tactical depth.
-            </p>
+            <blockquote class="text-xs text-slate-400 italic border-l-2 border-emerald-500/50 pl-2.5 mb-4">
+              "Historical real-time strategy set in 16th-17th century Europe, commanding Spanish Tercio formations across tactical campaign battlefields."
+            </blockquote>
 
-            <!-- Design Highlights Checklist -->
-            <div class="space-y-2.5 bg-slate-950/70 p-4 rounded-xl border border-slate-800/80 mb-6 text-xs text-slate-300">
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Mathematical Economy Modeling:</strong> Balanced resource sinks and faucets, troop recruitment costs, and supply line upkeep.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>GDD & Tactical Documentation:</strong> Wrote comprehensive GDD modules for combat units, counter systems, and battlefield maps.</span>
-              </div>
-              <div class="flex items-start gap-2">
-                <span class="text-orange-400 font-bold">▪</span>
-                <span><strong>Historical Encounter Design:</strong> Structured level encounters reflecting authentic tercio battle formations.</span>
-              </div>
+            <div class="space-y-1.5 text-xs text-slate-300 mb-6">
+              <p>• <strong>Mathematical Economy Modeling:</strong> Balanced resource faucets, sinks, recruitment costs, and supply upkeep.</p>
+              <p>• <strong>Tactical Level Design:</strong> Designed battlefield terrain layouts balancing historical Tercio pike-and-shot formations.</p>
+              <p>• <strong>Comprehensive GDDs:</strong> Produced exhaustive documentation for unit counters and combat calculations.</p>
             </div>
           </div>
 
-          <!-- Bottom Footer Link -->
-          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-[11px] font-mono-tag text-slate-400">Historical Strategy</span>
-            <button onclick="openModal('modal-tercios')" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1">
-              <span>View Case Study</span> <span>→</span>
+          <!-- Links & Actions -->
+          <div class="pt-4 border-t border-slate-800 space-y-2.5">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="store-badge bg-slate-800 text-slate-300 border border-slate-700">
+                <span>⚔️ Strategy GDD</span>
+              </span>
+              <span class="store-badge bg-slate-800 text-slate-300 border border-slate-700">
+                <span>📐 Tactical Levels</span>
+              </span>
+            </div>
+            <button onclick="openModal('modal-tercios')" class="w-full text-center py-1.5 rounded-lg bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/40 text-xs font-bold font-mono-tag transition-colors">
+              Read Design Breakdown →
             </button>
           </div>
         </article>
 
       </div>
 
-      <!-- UPCOMING TITLES BANNER -->
-      <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-slate-850 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <span class="text-[10px] font-mono-tag text-orange-400 font-bold uppercase tracking-wider">In Active Production</span>
-          <h4 class="text-lg font-bold text-white font-display mt-0.5">Upcoming Titles: Bion Clash & Oblivio</h4>
-          <p class="text-xs text-slate-400 mt-1 max-w-xl">
-            Currently designing core combat mechanics, system architecture, and spatial level encounters for Bionic Ape's upcoming commercial pipeline.
-          </p>
-        </div>
-        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-mono-tag border border-slate-700">
-          Status: In Development
-        </span>
-      </div>
+    </div>
+  </section>
 
+  <!-- ================= BIONIC APE CONTEXT & SYSTEMS ================= -->
+  <section id="studio" class="relative z-10 py-16 border-t border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-850 p-8 sm:p-10 rounded-2xl border border-slate-800">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+          <div>
+            <span class="text-xs font-mono-tag text-orange-400 font-bold uppercase tracking-wider">Studio Context</span>
+            <h3 class="text-2xl font-bold text-white font-display mt-0.5">Bionic Ape Studios</h3>
+            <p class="text-xs text-slate-400 mt-1">High-performance Unreal Engine engineering, server orchestration & proprietary technology.</p>
+          </div>
+          <a href="https://bionicape.com" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold font-mono-tag border border-slate-700 transition-colors flex items-center gap-1.5">
+            <span>Visit bionicape.com</span> <span>↗</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-b border-slate-800 text-center font-mono-tag">
+          <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800">
+            <span class="text-2xl font-extrabold text-orange-400 font-display">14+</span>
+            <p class="text-[11px] text-slate-400 mt-0.5">Unreal Engine Projects</p>
+          </div>
+          <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800">
+            <span class="text-2xl font-extrabold text-orange-400 font-display">62+</span>
+            <p class="text-[11px] text-slate-400 mt-0.5">Custom Plugins Built</p>
+          </div>
+          <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800">
+            <span class="text-2xl font-extrabold text-orange-400 font-display">20+</span>
+            <p class="text-[11px] text-slate-400 mt-0.5">Years Team Programming Exp</p>
+          </div>
+          <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800">
+            <span class="text-2xl font-extrabold text-orange-400 font-display">MMO</span>
+            <p class="text-[11px] text-slate-400 mt-0.5">Dedicated Server Suite</p>
+          </div>
+        </div>
+
+        <p class="pt-6 text-xs text-slate-300 leading-relaxed">
+          At Bionic Ape, I work alongside seasoned engineers and Computer Science veterans. My day-to-day connects high-level creative vision and game system balance directly with high-performance C++ architectures, dedicated server orchestrators (<a href="https://bionicape.com/hosting-suite/" target="_blank" class="text-orange-400 underline">Hosting Suite</a>), and Fab / Marketplace plugins (<a href="https://bionicape.com/premium-plugins/" target="_blank" class="text-orange-400 underline">Portals & Quest Plugins</a>).
+        </p>
+      </div>
     </div>
   </section>
 
@@ -460,10 +589,15 @@
             <h2 class="text-2xl font-bold text-white font-display">Juan Francisco Ramírez Aguilera</h2>
             <p class="text-xs font-mono-tag text-orange-400 mt-1">Lead Game Designer • Bionic Ape Studios</p>
           </div>
-          <!-- Download CV Button -->
-          <a href="#" onclick="alert('Descargando versión en PDF del CV');" class="px-5 py-2.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-colors flex items-center gap-2 shadow-sm">
-            <span>📄 Download Official CV (PDF)</span>
-          </a>
+          <!-- Download CV Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_D.pdf" target="_blank" download class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-colors flex items-center gap-1.5 shadow-sm">
+              <span>📄 Download Game Design CV</span>
+            </a>
+            <a href="assets/cv/RamirezAguilera_JuanFrancisco_EnglishCV_P.pdf" target="_blank" download class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-bold text-xs transition-colors flex items-center gap-1.5 shadow-sm">
+              <span>📋 Download Production CV</span>
+            </a>
+          </div>
         </div>
 
         <div class="py-6 text-sm text-slate-300 leading-relaxed space-y-4">
@@ -493,7 +627,7 @@
         Ready to build memorable games together?
       </h2>
       <p class="text-sm text-slate-400 max-w-md mx-auto mb-8">
-        I am always open to discussing new opportunities, lead game design roles, and collaborative projects.
+        Always open to discussing new game design opportunities, studio roles, and technical collaborations.
       </p>
 
       <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold mb-12">
@@ -507,21 +641,21 @@
 
       <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs font-mono-tag text-slate-500 gap-4">
         <span>© 2026 Juan Francisco Ramírez Aguilera. All rights reserved.</span>
-        <span>Lead Game Designer • System & Level Specialist</span>
+        <span>Portfolio: <a href="https://srjuanfri.github.io" class="text-orange-400">srjuanfri.github.io</a></span>
       </div>
 
     </div>
   </footer>
 
-  <!-- ================= MODAL DE CASO DE ESTUDIO (EJEMPLO INTERACTIVO) ================= -->
-  <div id="case-study-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl p-6 sm:p-8 relative">
+  <!-- ================= CASE STUDY INTERACTIVE MODAL ================= -->
+  <div id="case-study-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl p-6 sm:p-8 relative shadow-2xl">
       <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white font-mono-tag text-lg font-bold">
         ✕
       </button>
 
       <div id="modal-content">
-        <!-- Contenido dinámico -->
+        <!-- Injected via JavaScript -->
       </div>
     </div>
   </div>
@@ -532,30 +666,66 @@
         tag: "MMORPG • Live-Ops & Economy Overhaul",
         title: "The Prison — Live-Ops Retention & System Overhaul",
         role: "Lead Game Designer • Bionic Ape (2024)",
-        problem: "Post-launch player telemetry showed severe churn drop-offs at mid-game progression. The core loop lacked sustainable incentives to keep lapsed players coming back after completing initial questlines.",
-        solution: "Redesigned the entire daily/weekly event progression loop, introducing tier-based event milestones and dynamic reward scaling. Balanced the resource faucets and sinks in the player marketplace to stabilize in-game inflation.",
-        takeaway: "Achieved a +22% improvement in 30-day player retention (D30) and established an automated live-ops cadence for the studio's publishing pipeline on Steam."
+        steamUrl: "https://store.steampowered.com/app/1889920/The_Prison/",
+        epicUrl: "https://store.epicgames.com/es-ES/p/the-prison-f6cb95",
+        studioUrl: "https://bionicape.com/the-prison/",
+        overview: "A turn-based multiplayer MMORPG set in a high-security penitentiary. Players manage daily routines, gang alliances, contraband markets, and escape masterplans.",
+        problem: "Post-launch player telemetry showed high drop-offs at mid-game progression once players exhausted initial questlines. The core loop lacked sustainable incentives to re-engage lapsed players.",
+        solution: "Redesigned the entire daily and seasonal event progression loop. Rebalanced the resource faucets and sinks in the inmate trade market to stabilize in-game currency and disincentivize hoarding.",
+        takeaway: "Achieved a +22% improvement in 30-day player retention (D30), re-engaging lapsed community members and establishing a smooth automated live-ops patch cadence on Steam."
       },
       'modal-denbora': {
-        tag: "3D Puzzle Adventure • Unreal Engine",
+        tag: "3D Puzzle Adventure • Time Manipulation",
         title: "Denbora — Non-Intrusive Spatial Level Design",
         role: "Level Designer & Narrative Lead • Bionic Ape",
-        problem: "Teaching multi-layered time manipulation mechanics to players without breaking immersion with intrusive pop-up tutorials or text walls.",
+        grant: "Recipient of the 2023 Video Game Project Grant from the Community of Madrid",
+        steamUrl: "https://store.steampowered.com/app/2325840/Denbora/",
+        epicUrl: "https://store.epicgames.com/p/denbora-8a0fc3",
+        studioUrl: "https://bionicape.com/denbora/",
+        overview: "A first-person 3D puzzle adventure revolving around temporal causality across present and future timelines, provoked and tested by the cynical AI Dirua.",
+        problem: "Teaching multi-layered time manipulation and cause-and-effect mechanics to players without breaking immersion with intrusive pop-up tutorials or text walls.",
         solution: "Built a progressive whitebox corridor system in Unreal Engine where each room organically forces the player to discover one new mechanic rule before opening the gate. Used lighting, sightlines, and environmental ruins to guide the camera naturally.",
-        takeaway: "Playtesting verified that 94% of testers completed the opening gauntlet without external hints, validating the non-verbal environmental guidance pipeline."
+        takeaway: "Verified that over 90% of playtesters completed the opening gauntlet without hints, validating the non-verbal environmental guidance pipeline and securing regional government funding."
+      },
+      'modal-oblivio': {
+        tag: "Philosophical Narrative • Serious Game",
+        title: "Oblivio — Representing Alzheimer's Through Game Mechanics",
+        role: "Lead Designer & Narrative Architect • Bionic Ape",
+        grant: "Recipient of the 2023 Video Game Project Grant from the Community of Madrid",
+        steamUrl: "https://store.steampowered.com/app/2211340/Oblivio/",
+        studioUrl: "https://bionicape.com/oblivio/",
+        overview: "An evocative story-driven exploration of memory loss, love, and identity erosion as a protagonist slowly descends into Alzheimer's disease.",
+        problem: "How to authentically represent cognitive decay, disorientation, and emotional vulnerability without frustrating the player into quitting.",
+        solution: "Invented the Dual State Mechanic: shifting between 'Congruent' (clear, familiar reality) and 'Altered' (fragmented, distorted, surreal). Puzzles mimic memory recall tasks that progressively distort as the disease advances, creating deep player empathy.",
+        takeaway: "Realized the academic research of Bachelor/Master thesis into a commercially viable game, recognized with official Madrid game development grants."
+      },
+      'modal-bion': {
+        tag: "Party Royale • Cross-Play Multiplayer",
+        title: "Bion Clash — Procedural Minigames & Ethical F2P",
+        role: "Core Systems & Minigame Designer • Bionic Ape",
+        steamUrl: "https://store.steampowered.com/app/2757510/Bion_Clash/",
+        epicUrl: "https://store.epicgames.com/es-ES/p/bion-clash-276838",
+        studioUrl: "https://bionicape.com/bion-clash/",
+        overview: "A chaotic free-to-play party royale set in a satirical sci-fi universe inspired by Futurama, navigating sky elites, surface workers, and underground outcasts.",
+        problem: "Creating an ever-fresh party game experience while balancing monetization curves so that free players never feel outclassed by paying users.",
+        solution: "Designed modular rules for procedural minigames (frantic races, hide-and-seek, social deduction, casual shooters). Structured a battle pass and cosmetic progression curve strictly free from pay-to-win elements.",
+        takeaway: "Engineered gameplay loops suitable for low-poly cell-shaded performance across PC, Consoles (Xbox, PlayStation, Switch), and Mobile."
       },
       'modal-defense': {
         tag: "Confidential • Serious Game Simulations",
-        title: "High-Fidelity Defense Simulations & Academic A.I.",
+        title: "High-Fidelity Defense Simulations & University A.I.",
         role: "Simulation Systems Lead • Bionic Ape (NDA Protected)",
-        problem: "Translating rigorous, real-world operational protocols into a responsive real-time 3D simulation engine while coordinating theoretical machine learning models from university research partners.",
-        solution: "Architected deterministic state machines and tactical decision logic trees. Standardized the API communication between the university A.I. backend and the Unreal Engine simulation front-end.",
-        takeaway: "Delivered 100% of contract milestones on time, establishing a multi-year collaborative pipeline between Bionic Ape and defense sector partners."
+        studioUrl: "https://bionicape.com/about/",
+        overview: "High-fidelity simulation architectures for Defense sector clients, integrating applied academic A.I. research models into real-time interactive game engines.",
+        problem: "Translating rigorous, real-world operational doctrine into deterministic state machines without lagging real-time 3D rendering.",
+        solution: "Architected multi-agent behavior trees and mission pass/fail evaluation matrices. Standardized the API bridge connecting university machine learning models with Unreal Engine simulation clients.",
+        takeaway: "Delivered 100% of contract milestones on time, establishing a multi-year collaborative pipeline between Bionic Ape and institutional partners."
       },
       'modal-tercios': {
         tag: "Historical Strategy • Economy & Balancing",
         title: "Tercios: Honor and Glory — Economic Modeling",
         role: "Game Designer • Tree Games Studios (2023)",
+        overview: "Historical tactical strategy title commanding Spanish Tercios during the 16th and 17th centuries in Europe.",
         problem: "Balancing historical army composition (tercio pike-and-shot formations) with fair, competitive strategy game economics where no single unit type broke the tactical meta.",
         solution: "Built comprehensive mathematical balance spreadsheets modeling gold/food production rates, recruitment times, and combat casualty exchange ratios. Authored modular GDDs standardizing combat formulas.",
         takeaway: "Established the master economic balance model that dictated unit values across the entire campaign mode."
@@ -565,30 +735,47 @@
     function openModal(id) {
       const d = modalData[id];
       if (!d) return;
+
+      let linksHtml = '';
+      if (d.steamUrl) linksHtml += `<a href="${d.steamUrl}" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-white border border-slate-600"><span>🎮 Steam Store</span></a>`;
+      if (d.epicUrl) linksHtml += `<a href="${d.epicUrl}" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-white border border-slate-600"><span>⚡ Epic Games</span></a>`;
+      if (d.studioUrl) linksHtml += `<a href="${d.studioUrl}" target="_blank" class="store-badge bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-600"><span>🌐 Studio Page</span></a>`;
+
+      let grantHtml = d.grant ? `<div class="mb-4 p-2.5 rounded-lg bg-amber-950/60 border border-amber-800/80 text-amber-300 text-xs font-mono-tag font-semibold">🏆 ${d.grant}</div>` : '';
+
       document.getElementById('modal-content').innerHTML = `
         <span class="text-xs font-mono-tag font-bold text-orange-400 uppercase tracking-widest">${d.tag}</span>
-        <h2 class="text-2xl font-extrabold text-white font-display mt-1 mb-2">${d.title}</h2>
-        <p class="text-xs font-mono-tag text-slate-400 mb-6">${d.role}</p>
+        <h2 class="text-2xl font-extrabold text-white font-display mt-1 mb-1">${d.title}</h2>
+        <p class="text-xs font-mono-tag text-slate-400 mb-4">${d.role}</p>
 
-        <div class="space-y-5 text-sm text-slate-300">
+        ${grantHtml}
+
+        <div class="p-3 bg-slate-950/80 rounded-xl border border-slate-800 mb-6 text-xs text-slate-300 italic">
+          "${d.overview}"
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-300">
           <div class="bg-slate-950/70 p-4 rounded-xl border border-slate-800">
             <h4 class="font-bold text-white text-xs font-mono-tag uppercase tracking-wider mb-1 text-red-400">1. The Design Challenge</h4>
-            <p>${d.problem}</p>
+            <p class="text-xs leading-relaxed">${d.problem}</p>
           </div>
 
           <div class="bg-slate-950/70 p-4 rounded-xl border border-slate-800">
             <h4 class="font-bold text-white text-xs font-mono-tag uppercase tracking-wider mb-1 text-emerald-400">2. The Design Solution & Mechanics</h4>
-            <p>${d.solution}</p>
+            <p class="text-xs leading-relaxed">${d.solution}</p>
           </div>
 
           <div class="bg-slate-950/70 p-4 rounded-xl border border-slate-800">
             <h4 class="font-bold text-white text-xs font-mono-tag uppercase tracking-wider mb-1 text-orange-400">3. Verified Outcome & Impact</h4>
-            <p>${d.takeaway}</p>
+            <p class="text-xs leading-relaxed">${d.takeaway}</p>
           </div>
         </div>
 
-        <div class="mt-8 pt-4 border-t border-slate-800 flex justify-end">
-          <button onclick="closeModal()" class="px-5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold font-mono-tag">
+        <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap gap-2">
+            ${linksHtml}
+          </div>
+          <button onclick="closeModal()" class="px-5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold font-mono-tag transition-colors">
             Close Case Study
           </button>
         </div>
