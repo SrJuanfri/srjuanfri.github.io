@@ -1,0 +1,1 @@
+Carpeta interna donde se alojarán los PDFs descargables de la web.
